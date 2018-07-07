@@ -1,19 +1,46 @@
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
 body {
-    display: table-cell;
-    vertical-align: middle;
+  text-align: center;
+  background-color: black;
 }
 
+header,
+footer {
+  background-color: darkblue;
+  font-family: myFirstFont;
+  src: url("myfont.ttf") format("truetype");
+}
 .image {
-    height: 50px;
-    width: 100%;
-    background-color: transparent;
+  height: 500px;
+  width: auto\9;
+  object-fit: fill;
+
+}
+img {
+  align-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto\9;
+}
+h1,
+h2,
+main,
+p {
+  color: white;
+}
+
+main {
+  margin: 10%;
+}
+
+.story {
+  text-align: left;
+}
+#emptyFooter {
+  visibility: hidden;
+}
+
+footer {
+  height: 2em;
+  width: 100%;
 }
