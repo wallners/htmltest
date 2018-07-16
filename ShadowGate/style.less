@@ -1,22 +1,22 @@
+@color: darkblue;
+
 body {
   text-align: center;
   background-color: black;
 }
-header {
-  background-color: darkblue;
+
+header{
+  background-color: lighten(@color, 50%);
   font-family: myFirstFont;
   src: url("myfont.ttf") format("truetype");
 }
-footer {
-  background-color: #8b8bff;
+footer{
+  background-color: lighten(@color, 50%);
   font-family: myFirstFont;
   src: url("myfont.ttf") format("truetype");
 }
-.image {
-  height: 500px;
-  width: auto\9;
-  object-fit: fill;
-}
+
+
 img {
   align-content: center;
   max-width: 100%;
@@ -30,15 +30,18 @@ main,
 p {
   color: white;
 }
+
 main {
   margin: 10%;
 }
+
 .story {
   text-align: left;
 }
 #emptyFooter {
   visibility: hidden;
 }
+
 footer {
   height: 2em;
   width: 100%;
