@@ -1,0 +1,96 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  text-align: center;
+  background-color: black;
+}
+header {
+  background-color: #8b8bff;
+  font-family: myFirstFont;
+  src: url("myfont.ttf") format("truetype");
+}
+footer {
+  background-color: #8b8bff;
+  font-family: myFirstFont;
+  src: url("myfont.ttf") format("truetype");
+  height: 2em;
+  width: 100%;
+}
+img {
+  align-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto\9;
+}
+.selectPath {
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.selectPath:hover {
+  font-size: xx-large;
+}
+.selectPath:visited {
+  color: lightgreen;
+}
+.transition-element {
+  width: 100px;
+  height: 100px;
+  background: darkgreen;
+  transition-property: width, background, transform;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.transition-element:hover {
+  transform: skewY(20deg) rotate3d(0, 1, 0.5, 3.142rad);
+  width: 200px;
+  background: #ffffff;
+}
+h1,
+h2,
+main,
+p {
+  color: white;
+}
+main {
+  margin: 10%;
+}
+.story {
+  text-align: left;
+}
+.story::first-letter {
+  size: xx-large;
+  color: #ff0000;
+}
+#emptyFooter {
+  visibility: hidden;
+}
+@keyframes looparound {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 470px;
+  }
+  50% {
+    top: 170px;
+    left: 470px;
+  }
+  75% {
+    top: 170px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+#animationexample {
+  animation-name: looparound;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
